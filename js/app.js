@@ -31,7 +31,11 @@ $(document).ready(function(){
 	function showResults(results){
 		var html = "";
 		$.each(results.items, function(index,snippet){
-			html+="<p>" + snippet.snippet.title + "<p> <a href=\"https://www.youtube.com/watch?v=" + snippet.id.videoId + "\"> <img src=\"" + snippet.snippet.thumbnails.high.url + "\" alt=\"" + snippet.snippet.description + "\" style=\"height: 5rem;\"> </a>"
+			html+= "<div class='row'> <h3 class='col-md-8 well'>" + snippet.snippet.title + "</h3>"
+			html+= "<a class='col-md-4' href='https://www.youtube.com/watch?v=" + snippet.id.videoId + "'>"
+			html+= "<img src='" + snippet.snippet.thumbnails.high.url 
+			html+= "' alt='" + snippet.snippet.description 
+			html+= "' style='height: 10rem; margin-top: 17px;'> </a></div><hr>"
 			//console.log(value.title);
 		});
 		$('#search-results').html(html);
