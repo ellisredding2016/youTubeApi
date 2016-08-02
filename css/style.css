@@ -1,0 +1,11 @@
+.jumbotron {
+	background-image: url('../Images/youtube.jpg');
+	background-size: cover;
+	height:550px;
+} 
+
+#search-term{
+	margin-top: 20px;
+}
+
+h2 {text-align:right;}

@@ -2,18 +2,58 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>API Learning - Google</title>	
-	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<title>API Learning - Google</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/app.js"></script>
 
 </head>
 <body>
-	<form id="search-term">
-	 	Query Input:  <input id = "input" type="text" name="lname"><br>
-		<input id = "button" type="submit" value="Submit">
-	</form>
-	<div id="search-results">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	     	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+     		</button>
+	      	<a class="navbar-brand"><img src="./Images/logo.png" alt="Logo"></a>
+	    </div>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#">Page 1</a></li>
+	      <li><a href="#">Page 2</a></li> 
+	      <li><a href="#">Page 3</a></li> 
+	    </ul>
+	  </div>
+	</nav>
 
+	<div class = "container">
+		<div class = "jumbotron">
+			
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 leftBorder"> </div>
+			<div class="col-md-2">
+				<h2>Search:</h2>
+			</div>
+			<div class="col-md-8">
+				<form id="search-term" >
+				 	 <input id = "input" type="text" name="lname">
+					<button type="button" class="btn btn-danger" id = "button" type="submit" value="Submit">Submit</button>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 leftBorder"></div>
+			<div class="col-md-8" id="search-results">
+			</div>
+		</div>
 	</div>
 </body>
 </html>
